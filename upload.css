@@ -1,0 +1,104 @@
+nav{
+    background-color: black;
+    height: 756px;
+    width: 200px;
+    overflow: scroll;
+    margin: -8px;
+}
+nav li{
+    margin-top: 40px;
+}
+nav li a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: red;
+}
+.container{
+    display: flex;
+}
+.img{
+    margin-left: 280px;
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+}
+p{
+    font-size: 21px;
+    color: rgb(194, 240, 248);
+}
+hr{
+    margin-left: -40px;
+}
+.box{
+    margin-top: 120px;
+    margin-left: -500px;
+    display: flex;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    height: 250px;
+    width: 200px;
+    /* box-shadow: 6px 6px 0 0 gray; */
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+/* #menulogo{
+    height: 40px;
+    width: 40px;
+    margin-left: -12px;
+}
+#menub{
+    cursor: pointer;
+} */
+#sidenav{
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+     z-index: 2;
+    margin: -32px 0px;
+}
+#menub{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menub img{
+    width: 30px;
+    margin-left: -60px;
+    margin-top: 0px;    
+}
+
+.choose
+{
+    margin-top: 140px;
+    margin-left: -190px;
+    font-size: 20px;
+}
+#files{
+      margin-top: 290px;
+    margin-left: 660px;
+    position: fixed;
+    font-size: 16px;  
+}
+#uploads{
+    margin-top: 420px;
+    margin-left: 700px;
+    position: fixed;
+    font-size: 16px;  
+}
+#abcd{
+    margin-top: 490px;
+    margin-left: 660px;
+    position: fixed;
+    font-size: 18px;
+    color: green;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    
+    function news(){
+        var sidenav = document.getElementById("sidenav");
+        var menub = document.getElementById("menub");
+        var menu = document.getElementById("menu");
+
+        if(sidenav.style.left == "0px"){
+            sidenav.style.left = "-250px";
+        }
+        else{
+            sidenav.style.left = "0px";
+        }
+    }
+</script>
+<body>
+   
+    <div class="container">
+        <div id="sidenav">
+        <nav>
+            <ul>
+
+                 <li><p style="padding-top:20px; margin-left: 30px;"- class="dash" id="dashboard">Dashboard</p></li><hr>
+                <li><a href="index.html" class="new">Home</a></li>
+                <li><a href="about website.html" target="_blank">About website</a></li>
+                <li><a href="index.html" >services</a></li>
+                <li><a href="home.html" >Add new File</a></li>
+                <li><a href="explore earlier.html" >Explore Earlier</a></li>
+                <li><a href="nearupload.html" >Set Reminder</a></li>
+                <li><a href="share.html" >Share</a></li>
+                <li><a href="share.html" >Share</a></li>
+                <li><a href="share.html" >Share</a></li>
+                <li><a href="share.html" >Share</a></li>
+                <li><a href="share.html" >Share</a></li>
+                <li><a href="contact us.html" target="_blank">contact us</a></li>
+                <li><a href="share.html">Log out</a></li>
+            </ul>   
+        </nav>
+    </div>
+    <div id="menub" onclick="news()">
+        <img src="menu.png" alt="" id="menu">
+    </div>
+        <img src="z1.png" alt="" srcset="" class="img">
+       <h1> Paperless Administartion</h1>
+        <div class="box">
+          <a href="home.html" style="text-decoration: none;">  <div class="addnew">
+                <img class="newi" src="add.jpg" alt="" srcset=""><br><br>
+               <h3>Add new <br> Document</h3>
+            </div>
+        </a>
+        </div>
+        
+        <div class="expl">
+            <img class="newi" src="explor.jpg" alt="" srcset=""><br><br>
+        <a href="explore earlier.html" style="text-decoration: none;">   <h3>Explore <br> Earlier </h3></a>
+        </div>
+       
+        <div class="remind">
+            <img class="newim" src="remind.jpg" alt="" srcset=""><br><br>
+            <a href="nearupload.html" style="text-decoration: none;">      <h3>Reminder</h3></a>
+        </div>
+
+        <div class="makepdf">
+            <img class="newimg" src="pdf.jpg" alt="" srcset=""><br><br>
+          <a href="makepdf.html" style="text-decoration: none;">    <h3>Make your <br> PDF</h3></a>
+        </div>
+     
+        <div class="share">
+            <img class="newimgs" src="share.png" alt="" srcset=""><br><br>
+            <a href="share.html" style="text-decoration: none;">    <ab><b> Share</b></ab>
+                </a>
+        </div>
+        <i class="fa fa-home" aria-hidden="true"></i>
+    </div>
+</body>
+</html>

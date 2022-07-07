@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homescc.css">
+</head>
+<script>
+    
+    function news(){
+        var sidenav = document.getElementById("sidenav");
+        var menub = document.getElementById("menub");
+        var menu = document.getElementById("menu");
+
+        if(sidenav.style.left == "0px"){
+            sidenav.style.left = "-250px";
+        }
+        else{
+            sidenav.style.left = "0px";
+        }
+    }
+</script>
+<body>
+   
+    <div class="container">
+        <div id="sidenav">
+        <nav>
+            <ul>
+
+                 <li><p style="padding-top:20px; margin-left: 30px;"- class="dash" id="dashboard">Dashboard</p></li><hr>
+                <li><a href="index.html" class="new">Home</a></li>
+                <li><a href="about website.html" target="_blank">About website</a></li>
+                <li><a href="" >services</a></li>
+                <li><a href="" >Add new File</a></li>
+                <li><a href="" >Explore Earlier</a></li>
+                <li><a href="" >Set Reminder</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="contact us.html" target="_blank">contact us</a></li>
+                <li><a href="">Log out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menub" onclick="news()">
+        <img src="menu.png" alt="" id="menu">
+    </div>
+        <img src="z1.png" alt="" srcset="" class="img">
+       <h1> Paperless Administartion</h1>
+    
+    <div class="choose">
+     -:   Select your Folder in which you want to upload File :-
+    </div>
+    <select name="select" id="sel">
+        <option value="0">--Select--</option>
+        <option value="a">GST</option>
+        <option value="b">IT Return</option>
+        <option value="c">Monthly Salary slip</option>
+        <option value="d">Aadhar</option>
+        <option value="e">PAN</option>
+        <option value="f">About Vehical</option>
+        <option value="g">Electricity Bill</option>
+        <option value="h">Account Statements</option>
+        <option value="i">Telephone Bill</option>
+        <option value="j">Office Document</option>
+        <option value="k">Personal Data</option>
+        <option value="l">Other</option>
+    </select>
+    <button type="submit" class="next"><a href="upload.html" style="text-decoration:none;"> Next</a></button>
+</body>
+</html>

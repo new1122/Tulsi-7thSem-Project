@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generation Using jsPDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<style>
+            span {
+            font-size: 18px;
+        }
+        
+      
+        
+        h1 {
+            margin-top: 25px;
+            margin-bottom: -10px;
+            text-align: center;
+            color: crimson;
+        }
+        nav{
+    background-color: black;
+    height: 756px;
+    width: 200px;
+    overflow: scroll;
+    margin: -8px;
+}
+nav li{
+    margin-top: 40px;
+}
+nav li a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: red;
+}
+.container{
+    display: flex;
+}
+.img{
+    margin-left: 280px;
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+}
+p{
+    font-size: 21px;
+    color: rgb(194, 240, 248);
+}
+hr{
+    margin-left: -40px;
+}
+.box{
+    margin-top: 120px;
+    margin-left: -500px;
+    display: flex;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    height: 250px;
+    width: 200px;
+    /* box-shadow: 6px 6px 0 0 gray; */
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+/* #menulogo{
+    height: 40px;
+    width: 40px;
+    margin-left: -12px;
+}
+#menub{
+    cursor: pointer;
+} */
+#sidenav{
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+     z-index: 2;
+    margin: -32px 0px;
+}
+#menub{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menub img{
+    width: 30px;
+    margin-left: -60px;
+    margin-top: 0px;
+}
+        .logout {
+            margin-left: 1300px;
+        }
+        
+       
+        .content {
+            border: 3px solid rgb(165, 218, 22);
+            height: 362px;
+            padding: 0px;
+            margin-top: 210px;
+            margin-left: -400px;
+        }
+        
+        #b1 {
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+            margin-left: 220px;
+            margin-top: 62px;
+        }
+        
+        #b1:hover {
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition: ease-out;
+            background-color: rgb(179, 128, 62);
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b2 {
+            top: 55px;
+            left: 610px;
+            font-size: 18px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            font-size: 19px;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b2:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b3 {
+            top: 48px;
+            left: 970px;
+            font-size: 19px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b3:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 21px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b4 {
+            top: 200px;
+            left: 420px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: 19px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b4:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b4-1 {
+            top: 200px;
+            left: 60px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: 19px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b4-1:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b5 {
+            top: 200px;
+            left: 800px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+        }
+        
+        #b5:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+       
+        footer {
+            background-color: #fcddae;
+            margin-left: 1162px;
+            margin-right: 10px;
+        }
+        
+        .a11 {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .heading {
+            display: flex;
+            margin-left: 400px;
+            margin-bottom: 0px;
+        }
+        
+        #imgs {
+            height: 105px;
+            width: 120px;
+        }
+        
+        h1 {
+            margin-top: 22px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            color: crimson;
+            font-size: 39px;
+        }
+        
+        .logout {
+            margin-left: 320px;
+            margin-top: 70px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        #logout1 {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        #text{
+            margin-left: 30px;     
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+        #generate{
+            margin-left: 280px;
+            background-color: black;
+            color: white;
+            height: 25px;
+            width: 190px;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <div class="container">
+        <div id="sidenav">
+        <nav>
+            <ul>
+
+                 <li><p style="padding-top:20px; margin-left: 30px;"- class="dash" id="dashboard">Dashboard</p></li><hr>
+                <li><a href="index.html" class="new">Home</a></li>
+                <li><a href="#" target="_blank">About website</a></li>
+                <li><a href="" >services</a></li>
+                <li><a href="home.html" >Add new File</a></li>
+                <li><a href="explore earlier.html" >Explore Earlier</a></li>
+                <li><a href="nearupload.html" >Set Reminder</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="contact us.html" target="_blank">contact us</a></li>
+                <li><a href="">Log out</a></li>
+            </ul>   
+        </nav>
+    </div>
+    <div class="heading">
+        <img id="imgs" src="z1.png">
+        <h1>Paperless Administration</h1>
+       
+    </div>
+     <nav class="navigate">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about website.html" target="_blank">About website</a></li>
+            <li><a href="" class="service1">services</a></li>
+            <li><a href="contact us.html" target="_blank">contact us</a></li>
+            <li class="search">Search :</li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Discover here">
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+
+
+    <textarea name="text_abhi" style="background-color: #ffb13c;" id="text" cols="90" rows="20"></textarea><br>
+    <button id="generate" onclick ="generatePdf()">Generate PDF</button>
+        </div>
+        <footer>
+
+            Paperless Administration <br> All rights reserved <span>&#169</span>
+        </footer>
+</body>
+
+<script>
+    function generatePdf(){
+        var doc = new jsPDF()
+        var text = document.getElementById('text').value
+        doc.text(text,15,15)
+        doc.save("Tulsi Acharya Document.pdf")
+    }
+
+</script>
+</html>

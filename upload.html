@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<script>
+    
+    function news(){
+        var sidenav = document.getElementById("sidenav");
+        var menub = document.getElementById("menub");
+        var menu = document.getElementById("menu");
+
+        if(sidenav.style.left == "0px"){
+            sidenav.style.left = "-250px";
+        }
+        else{
+            sidenav.style.left = "0px";
+        }
+    }
+    function uploaded(){
+        var abc =   document.getElementById("abcd")
+        abc.innerHTML = "File Uploaded Successfully!!!";
+    }
+</script>
+<body>
+   
+    <div class="container">
+        <div id="sidenav">
+        <nav>
+            <ul>
+
+                 <li><p style="padding-top:20px; margin-left: 30px;"- class="dash" id="dashboard">Dashboard</p></li><hr>
+                <li><a href="index.html" class="new">Home</a></li>
+                <li><a href="about website.html" target="_blank">About website</a></li>
+                <li><a href="" >services</a></li>
+                <li><a href="" >Add new File</a></li>
+                <li><a href="" >Explore Earlier</a></li>
+                <li><a href="" >Set Reminder</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="" >Share</a></li>
+                <li><a href="contact us.html" target="_blank">contact us</a></li>
+                <li><a href="">Log out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menub" onclick="news()">
+        <img src="menu.png" alt="" id="menu">
+    </div>
+        <img src="z1.png" alt="" srcset="" class="img">
+       <h1> Paperless Administartion</h1>
+    
+    <div class="choose">
+     -:   Kindly choose your file for upload :-
+    </div>
+  <input type="file" name="" id="files">
+<button type="submit" id="uploads" onclick="uploaded()">UPLOAD</button>
+<div id="abcd"></div>
+</body>
+</html>

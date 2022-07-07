@@ -1,0 +1,176 @@
+nav{
+    background-color: black;
+    height: 756px;
+    width: 200px;
+    overflow: scroll;
+    margin: -8px;
+}
+nav li{
+    margin-top: 40px;
+}
+nav li a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: red;
+}
+.container{
+    display: flex;
+}
+.img{
+    margin-left: 280px;
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+}
+p{
+    font-size: 21px;
+    color: rgb(194, 240, 248);
+}
+hr{
+    margin-left: -40px;
+}
+.box{
+    margin-top: 120px;
+    margin-left: -500px;
+    display: flex;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    height: 250px;
+    width: 200px;
+    /* box-shadow: 6px 6px 0 0 gray; */
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+/* #menulogo{
+    height: 40px;
+    width: 40px;
+    margin-left: -12px;
+}
+#menub{
+    cursor: pointer;
+} */
+#sidenav{
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+     z-index: 2;
+    margin: -32px 0px;
+}
+#menub{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menub img{
+    width: 30px;
+    margin-left: -60px;
+    margin-top: 0px;
+}
+h1{
+
+    text-shadow: 4px 4px 4px 4px gray;
+}
+.box:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+.newi{
+    height: 110px;
+    width: 100px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.box:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+h3{
+    padding-left: 60px;
+    font-size: 22px;
+}
+.expl{
+    height: 250px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 120px;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+.expl:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+.remind{
+    height: 250px;
+    width: 200px;
+    margin-left: 180px;
+    margin-top: 120px;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+.remind:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+.newim{
+    height: 110px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.makepdf{
+    height: 250px;
+    width: 200px;
+    margin-left: -765px;
+    margin-top: 360px;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+.makepdf:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+.newimg{
+    height: 110px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.share{
+    height: 250px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 360px;
+    border: 0.2px solid black;
+    border-radius: 70px;
+    box-shadow: 2px 2px 5px 0 gray, 3px 4px 4px 0 gray;
+}
+.share:hover{
+    background-color: rgb(255, 240, 214);
+    cursor: pointer;
+}
+.newimgs{
+    height: 120px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ab{
+    font-size: 22px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
